@@ -20,18 +20,18 @@ variables:
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
   time: ' kl \d\d?(\:\d\d)?$'
   # done
-  checkedCheckbox: '^\t*\[x\]\s'
-  contextual: '^\t*:::\s'
+  checkedCheckbox: '^\t*\[x\] '
+  contextual: '^\t*::: '
   # todo
-  emptyCheckbox: '^\t*\[\s\]\s'
-  deletable: '^\t*\-\s\-\s'
-  recurring: '^\t*\+\+\+\s'
-  future: '^\t*\>\>\>\s'
   # inline
+  emptyCheckbox: '^\t*\[ \] '
+  deletable: '^\t*\- \- '
+  recurring: '^\t*\+\+\+ '
+  future: '^\t*\>\>\> '
   unanswered: '\?\?\?'
-  important: '\t*!!!\s.*'
+  reminder: '\t*!!!( .*)?'
   # special keys
-  superEfficient: '\~\s(Supereffektiv|Ninjaeffektiv|Godlike)'
+  superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)'
   specialKeys: '\~.*$'
 
 contexts:
