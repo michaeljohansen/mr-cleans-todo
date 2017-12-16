@@ -35,7 +35,7 @@ variables:
   specialKeys: '\~.*$'
 
 contexts:
-  main:
+  main: # TODO: Expand to several scopes?
     # time
     - match: '{{day}}'
       scope: support.function
@@ -65,7 +65,3 @@ contexts:
       scope: entity.name.function.js
     - match: '{{specialKeys}}'
       scope: comment.line
-
-  string:
-    - match: noe
-      scope: noe
