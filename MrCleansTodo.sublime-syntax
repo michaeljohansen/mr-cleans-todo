@@ -16,7 +16,7 @@ scope: source # default scope assigned to all text
 # - red for important reminders "!!!"
 
 variables:
-  # time
+  # date and time
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
   time: ' kl \d\d?(\:\d\d)?$'
   # done
@@ -30,13 +30,16 @@ variables:
   # todo:highlight
   unanswered: '\?\?\?'
   reminder: '\t*!!!( .*)?'
-  # special keys
+  errorOptionSpaceInCheckbox: '\t*\[ \]' # option + space = non-breaking space
+  errorOptionSpaceAfterCheckbox: '\t*\[ \] '
+  errorOptionSpaceBothInAndAfterCheckbox: '\t*\[ \] '
+  # day tags
   superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)'
   specialKeys: '\~.*$'
 
 contexts:
   main: # TODO: Expand to several scopes?
-    # time
+    # date and time
     - match: '{{day}}'
       scope: support.function
     - match: '{{time}}'
@@ -60,7 +63,9 @@ contexts:
       scope: keyword
     - match: '{{reminder}}'
       scope: keyword
-    # special keys
+    - match: '{{errorOptionSpaceInCheckbox}}|{{errorOptionSpaceAfterCheckbox}}|{{errorOptionSpaceBothInAndAfterCheckbox}}'
+      scope: keyword
+    # day tags
     - match: '{{superEfficient}}'
       scope: entity.name.function.js
     - match: '{{specialKeys}}'
