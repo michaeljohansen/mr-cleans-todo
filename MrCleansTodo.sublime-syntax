@@ -16,8 +16,9 @@ scope: source # default scope assigned to all text
 # - red for important reminders "!!!"
 
 variables:
-  # days
+  # time
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
+  time: ' kl \d\d?(\:\d\d)?$'
   # done
   checkedCheckbox: '^\t*\[x\]\s'
   contextual: '^\t*:::\s'
@@ -35,9 +36,11 @@ variables:
 
 contexts:
   main:
-    # days
+    # time
     - match: '{{day}}'
-      scope: keyword
+      scope: support.function
+    - match: '{{time}}'
+      scope: support.function
     # done
     - match: '{{checkedCheckbox}}'
       scope: support.function # DT blue
