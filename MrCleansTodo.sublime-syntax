@@ -30,9 +30,7 @@ variables:
   # todo:highlight
   unanswered: '\?\?\?'
   reminder: '\t*!!!( .*)?'
-  errorOptionSpaceInCheckbox: '\t*\[ \]' # option + space = non-breaking space
-  errorOptionSpaceAfterCheckbox: '\t*\[ \] '
-  errorOptionSpaceBothInAndAfterCheckbox: '\t*\[ \] '
+  errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
   # day tags
   superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)'
   specialKeys: '\~.*$'
@@ -63,7 +61,7 @@ contexts:
       scope: keyword
     - match: '{{reminder}}'
       scope: keyword
-    - match: '{{errorOptionSpaceInCheckbox}}|{{errorOptionSpaceAfterCheckbox}}|{{errorOptionSpaceBothInAndAfterCheckbox}}'
+    - match: '{{errorOptionSpace}}'
       scope: keyword
     # day tags
     - match: '{{superEfficient}}'
