@@ -18,6 +18,9 @@ variables:
   deletable: '^\t*\-\s\-\s'
   recurring: '^\t*\+\+\+\s'
   future: '^\t*\>\>\>\s'
+  # inline
+  unanswered: '\?\?\?'
+  important: '\t*!!!\s.*'
   # special keys
   superEfficient: '\~\s(Supereffektiv|Ninjaeffektiv|Godlike)'
   specialKeys: '\~.*$'
@@ -32,7 +35,6 @@ contexts:
       scope: support.function # DT blue
     - match: '{{contextual}}'
       scope: support.function
-      #scope: constant.language.boolean.true.js # DT red italic
     # todo
     - match: '{{emptyCheckbox}}'
       scope: entity.name
@@ -42,6 +44,11 @@ contexts:
       scope: entity.name
     - match: '{{future}}'
       scope: entity.name
+    # inline
+    - match: '{{unanswered}}'
+      scope: keyword
+    - match: '{{important}}'
+      scope: keyword
     # special keys
     - match: '{{superEfficient}}'
       scope: entity.name.function.js
@@ -54,5 +61,4 @@ contexts:
 
 
     # kl ??:??
-    # ???
-    # !!!
+
