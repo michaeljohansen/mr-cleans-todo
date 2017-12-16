@@ -21,7 +21,7 @@ variables:
   errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
   # day, date, time
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
-  time: ' kl \d\d?(\:\d\d)?$'
+  time: '(00|01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21|22|23|[0-9])(\:[0-5][0-9])?'
   # done
   checkedCheckbox: '^\t*\[x\] '
   contextual: '^\t*::: '
@@ -47,7 +47,7 @@ contexts:
     # day, date, time
     - match: '{{day}}'
       scope: support.function
-    - match: '{{time}}'
+    - match: ' [Kk]l {{time}}( - {{time}})?'
       scope: support.function
     # done
     - match: '{{checkedCheckbox}}'
