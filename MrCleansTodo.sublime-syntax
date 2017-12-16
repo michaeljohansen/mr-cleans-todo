@@ -23,11 +23,11 @@ variables:
   checkedCheckbox: '^\t*\[x\] '
   contextual: '^\t*::: '
   # todo
-  # inline
   emptyCheckbox: '^\t*\[ \] '
   deletable: '^\t*\- \- '
   recurring: '^\t*\+\+\+ '
   future: '^\t*\>\>\> '
+  # todo:highlight
   unanswered: '\?\?\?'
   reminder: '\t*!!!( .*)?'
   # special keys
@@ -55,10 +55,10 @@ contexts:
       scope: entity.name
     - match: '{{future}}'
       scope: entity.name
-    # inline
+    # todo:highlight
     - match: '{{unanswered}}'
       scope: keyword
-    - match: '{{important}}'
+    - match: '{{reminder}}'
       scope: keyword
     # special keys
     - match: '{{superEfficient}}'
@@ -69,7 +69,3 @@ contexts:
   string:
     - match: noe
       scope: noe
-
-
-    # kl ??:??
-
