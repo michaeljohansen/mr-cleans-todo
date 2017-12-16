@@ -7,6 +7,14 @@ scope: source # default scope assigned to all text
 # `ctrl + shift + p` shows the scope of the current text in an editor
 # DT = Default theme
 
+# Colors:
+# - <COLOR_HERE> for days
+# - <COLOR_HERE> for times
+# - blue for "done-y" things
+# - green for "todo-y" things
+# - red for unresolved things "???"
+# - red for important reminders "!!!"
+
 variables:
   # days
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
