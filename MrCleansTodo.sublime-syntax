@@ -16,7 +16,10 @@ scope: source # default scope assigned to all text
 # - red for important reminders "!!!"
 
 variables:
-  # date and time
+  # errors
+  errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
+  errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
+  # day, date, time
   day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
   time: ' kl \d\d?(\:\d\d)?$'
   # done
@@ -29,15 +32,19 @@ variables:
   future: '^\t*\>\>\> '
   # todo:highlight
   unanswered: '\?\?\?'
-  reminder: '\t*!!!( .*)?'
-  errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
+  reminder: '^\t*!!!( .*)?'
   # day tags
   superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)'
   specialKeys: '\~.*$'
 
 contexts:
   main: # TODO: Expand to several scopes?
-    # date and time
+    # errors (placed first to take precedence)
+    - match: '{{errorOptionSpace}}'
+      scope: keyword
+    - match: '{{errorCommaAfterCheckbox}}'
+      scope: keyword
+    # day, date, time
     - match: '{{day}}'
       scope: support.function
     - match: '{{time}}'
@@ -60,8 +67,6 @@ contexts:
     - match: '{{unanswered}}'
       scope: keyword
     - match: '{{reminder}}'
-      scope: keyword
-    - match: '{{errorOptionSpace}}'
       scope: keyword
     # day tags
     - match: '{{superEfficient}}'
