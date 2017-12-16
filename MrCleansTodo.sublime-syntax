@@ -1,0 +1,58 @@
+%YAML 1.2
+---
+name: MrCleansTodo
+file_extensions: [todo]
+scope: source # default scope assigned to all text
+
+# `ctrl + shift + p` shows the scope of the current text in an editor
+# DT = Default theme
+
+variables:
+  # days
+  day: '^(man|tirs|ons|tors|fre|lør|søn)dag \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
+  # done
+  checkedCheckbox: '^\t*\[x\]\s'
+  contextual: '^\t*:::\s'
+  # todo
+  emptyCheckbox: '^\t*\[\s\]\s'
+  deletable: '^\t*\-\s\-\s'
+  recurring: '^\t*\+\+\+\s'
+  future: '^\t*\>\>\>\s'
+  # special keys
+  superEfficient: '\~\s(Supereffektiv|Ninjaeffektiv|Godlike)'
+  specialKeys: '\~.*$'
+
+contexts:
+  main:
+    # days
+    - match: '{{day}}'
+      scope: keyword
+    # done
+    - match: '{{checkedCheckbox}}'
+      scope: support.function # DT blue
+    - match: '{{contextual}}'
+      scope: support.function
+      #scope: constant.language.boolean.true.js # DT red italic
+    # todo
+    - match: '{{emptyCheckbox}}'
+      scope: entity.name
+    - match: '{{deletable}}'
+      scope: entity.name
+    - match: '{{recurring}}'
+      scope: entity.name
+    - match: '{{future}}'
+      scope: entity.name
+    # special keys
+    - match: '{{superEfficient}}'
+      scope: entity.name.function.js
+    - match: '{{specialKeys}}'
+      scope: comment.line
+
+  string:
+    - match: noe
+      scope: noe
+
+
+    # kl ??:??
+    # ???
+    # !!!

@@ -1,0 +1,8 @@
+[
+	{ "keys": ["alt+1"], "command": "run_macro_file", "args": {"file": "Packages/MichaelJohansensTodo/macros/CrossOffBox.sublime-macro"} },
+	{ "keys": ["ctrl+'"], "command": "run_macro_file", "args": {"file": "Packages/MichaelJohansensTodo/macros/CreateBoxHere.sublime-macro"} },
+	{ "keys": ["ctrl+1"], "command": "run_macro_file", "args": {"file": "Packages/MichaelJohansensTodo/macros/CreateFirstLevelBox.sublime-macro"} },
+	{ "keys": ["ctrl+2"], "command": "run_macro_file", "args": {"file": "Packages/MichaelJohansensTodo/macros/CreateSecondLevelBox.sublime-macro"} },
+	{ "keys": ["ctrl+3"], "command": "run_macro_file", "args": {"file": "Packages/MichaelJohansensTodo/macros/CreateThirdLevelBox.sublime-macro"} },
+	{ "keys": ["ctrl+u"], "command": "permute_lines", "args": {"operation": "unique"} }
+]

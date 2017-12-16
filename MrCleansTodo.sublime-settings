@@ -1,0 +1,18 @@
+// Settings in here override those in "Default/Preferences.sublime-settings", and
+// are overridden in turn by file type specific settings.
+{
+	// Font
+	"font_face": "Operator Mono",
+	"font_size": 14,
+
+	// Layout
+	"rulers": [80],
+
+	// File handling
+	"save_on_focus_lost": true,
+
+	// Whitespace
+	"tab_size": 4,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
