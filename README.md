@@ -8,16 +8,16 @@ Questions: Open an issue or email me at `michael+mr-cleans-todo@informatikk.org`
 
 ## Example usage
 
-A simple day is shown here, without the syntax highlighting. TODO: Add screenshot instead.
+Two simple days are shown here, without the syntax highlighting. TODO: Add screenshot instead.
 
 ```
 saturday 17.12.18 ~ Trondheim trip
 Awesome hotel breakfast.
 [x] Elv
-	[x] talk to the person about the thing at 9:30
-	[x] fix the bug in the user module
-	[ ] finish planning of new wiki module
-	[ ] team retrospective at 15
+    [x] talk to the person about the thing at 9:30
+    [x] fix the bug in the user module
+    [ ] finish planning of new wiki module
+    [ ] team retrospective at 15
 Dinner at Solsiden with the team, at 17:30.
 [ ] Shopping
     [ ] pick up the IKEA-package at the post office
