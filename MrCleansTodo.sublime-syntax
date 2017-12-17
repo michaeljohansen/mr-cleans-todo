@@ -42,7 +42,7 @@ variables:
   line: '^[-=]*$'
 
 contexts:
-  main: # TODO: Expand to several scopes?
+  main: # TODO: Expand to several contexts? Would be nice with a day context.
     # errors (placed first to take precedence)
     - match: '{{errorSpaceNotTab}}'
       scope: error

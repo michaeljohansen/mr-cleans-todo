@@ -75,6 +75,8 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
             <string>day</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
                 <key>foreground</key>
                 <string>#fd971f</string>
             </dict>
