@@ -76,7 +76,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#f92672</string>
+                <string>#fd971f</string>
             </dict>
         </dict>
         <dict>
@@ -87,7 +87,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#f92672</string>
+                <string>#fd971f</string>
             </dict>
         </dict>
 
@@ -100,7 +100,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#a6e22e</string>
             </dict>
         </dict>
         <dict>
@@ -111,76 +111,81 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#a6e22e</string>
             </dict>
         </dict>
 
+        <!-- Todo -->
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Empty checkbox</string>
             <key>scope</key>
             <string>todo.emptycheckbox</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#66d9ef</string>
             </dict>
         </dict>
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Deletable</string>
             <key>scope</key>
             <string>todo.deletable</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#66d9ef</string>
             </dict>
         </dict>
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Recurring</string>
             <key>scope</key>
             <string>todo.recurring</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#66d9ef</string>
             </dict>
         </dict>
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Future</string>
             <key>scope</key>
             <string>todo.future</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#66d9ef</string>
             </dict>
         </dict>
+
+        <!-- Highlight -->
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Unanswered</string>
             <key>scope</key>
             <string>highlight.unanswered</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#f92672</string>
             </dict>
         </dict>
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Reminder</string>
             <key>scope</key>
             <string>highlight.reminder</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#f92672</string>
             </dict>
         </dict>
+
+        <!-- Tags -->
         <dict>
             <key>name</key>
             <string>???</string>
@@ -200,9 +205,11 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#66d9ef</string>
             </dict>
         </dict>
+
+        <!-- Line -->
         <dict>
             <key>name</key>
             <string>???</string>
@@ -211,7 +218,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#f92672</string>
             </dict>
         </dict>
 
