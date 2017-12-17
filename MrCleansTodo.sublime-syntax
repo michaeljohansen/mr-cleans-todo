@@ -17,6 +17,7 @@ scope: source # default scope assigned to all text
 
 variables:
   # errors
+  errorSpaceNotTab: '^\s* \s*.*$' # spaces used instead of tabs risks malalignment
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
   errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
   # day, date, time
@@ -34,12 +35,14 @@ variables:
   unanswered: '\?\?\?'
   reminder: '^\t*!!!( .*)?'
   # day tags
+  superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before specialKeys because precedence
   specialKeys: '\~.*$'
-  superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)'
 
 contexts:
   main: # TODO: Expand to several scopes?
     # errors (placed first to take precedence)
+    - match: '{{errorSpaceNotTab}}'
+      scope: keyword
     - match: '{{errorOptionSpace}}'
       scope: keyword
     - match: '{{errorCommaAfterCheckbox}}'
@@ -69,7 +72,7 @@ contexts:
     - match: '{{reminder}}'
       scope: keyword
     # day tags
-    - match: '{{specialKeys}}'
-      scope: comment.line
     - match: '{{superEfficient}}'
       scope: entity.name.function.js
+    - match: '{{specialKeys}}'
+      scope: comment.line
