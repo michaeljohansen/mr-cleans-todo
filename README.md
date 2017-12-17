@@ -13,7 +13,7 @@ Two simple days are shown here, without the syntax highlighting. TODO: Add scree
 ```
 saturday 17.12.18 ~ Trondheim trip
 Awesome hotel breakfast.
-[x] Elv
+[x] Elv Technology
     [x] talk to the person about the thing at 9:30
     [x] fix the bug in the user module
     [ ] finish planning of new wiki module
@@ -51,7 +51,7 @@ Legend:
         [ ] Agenda point
         [ ] Agenda point
     - - A deletable, usually a very short task or a small reminder
-    !!! An important note or reminder
+    !!! An important note or reminder, also deletable, but highlighted
     >>> A thing that must be moved to a future day
     [ ] One last subtask
 [ ] Get a birthday gift for Jon Andreas
