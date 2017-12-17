@@ -203,7 +203,7 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
         <!-- Tags -->
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Tags</string>
             <key>scope</key>
             <string>tag.gamification</string>
             <key>settings</key>
@@ -214,7 +214,7 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
         </dict>
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Stories</string>
             <key>scope</key>
             <string>tag.stories</string>
             <key>settings</key>
@@ -227,7 +227,7 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
         <!-- Line -->
         <dict>
             <key>name</key>
-            <string>???</string>
+            <string>Line</string>
             <key>scope</key>
             <string>line</string>
             <key>settings</key>
