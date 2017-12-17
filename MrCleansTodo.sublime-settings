@@ -2,7 +2,7 @@
 // are overridden in turn by file type specific settings.
 {
 	// Font
-	"font_face": "Operator Mono",
+	"font_face": "Operator Mono", // Use a monospaced font you like
 	"font_size": 14,
 
 	// Layout
