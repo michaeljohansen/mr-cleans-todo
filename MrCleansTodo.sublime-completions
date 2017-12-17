@@ -17,6 +17,8 @@
 		{ "trigger": "n\tin", "contents": "Ninjaeffektiv" },
 		{ "trigger": "g\tod", "contents": "Godlike" },
 
+		// Triggers below are specific to me, the author. Make something you want instead.
+
 		{ "trigger": "k\tkk", "contents": "[ ] Knowit, kl ???," },
 
 		{ "trigger": "org\tchart", "contents": "[ ] Elv, HOC, OrgChart,\n\t[ ] ?: ?" },
