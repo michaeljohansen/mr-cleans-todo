@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!--
+todo.emptycheckbox
+todo.deletable
+todo.recurring
+todo.future
+highlight.unanswered
+highlight.reminder
+tag.gamification
+tag.stories
+line
+-->
+
+<dict>
+    <key>name</key>
+    <string>Example Color Scheme</string>
+    <key>settings</key>
+    <array>
+        <!-- Global settings -->
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#222222</string>
+                
+                <key>foreground</key>
+                <string>#EEEEEE</string>
+
+                <key>caret</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict>
+
+        <!-- Scope styles -->
+        
+        <!-- Errors -->
+        <dict>
+            <key>name</key>
+            <string>Error</string>
+            <key>scope</key>
+            <string>error</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>red</string>
+            </dict>
+        </dict>
+        
+        <!-- Day and time -->
+        <dict>
+            <key>name</key>
+            <string>Day</string>
+            <key>scope</key>
+            <string>day</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Time</string>
+            <key>scope</key>
+            <string>time</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+
+        <!-- Done -->
+        <dict>
+            <key>name</key>
+            <string>Checked checkbox</string>
+            <key>scope</key>
+            <string>done.checkedcheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>lightblue</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Contextual</string>
+            <key>scope</key>
+            <string>done.contextual</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>lightblue</string>
+            </dict>
+        </dict>
+
+    </array>
+</dict>
+</plist>
+
