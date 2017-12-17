@@ -3,8 +3,8 @@
 <plist version="1.0">
 
 <!--
-    Docs:
-    http://docs.sublimetext.info/en/latest/reference/color_schemes.html
+Docs: http://docs.sublimetext.info/en/latest/reference/color_schemes.html
+Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/Monokai.tmTheme
 -->
 
 <dict>
@@ -19,31 +19,31 @@
                 <key>background</key>
                 <string>#272822</string>
                 <key>caret</key>
-                <string>#F8F8F0</string>
+                <string>#f8f8f0</string>
                 <key>foreground</key>
-                <string>#F8F8F2</string>
+                <string>#f8f8f2</string>
                 <key>invisibles</key>
-                <string>#3B3A32</string>
+                <string>#3b3a32</string>
                 <key>lineHighlight</key>
-                <string>#3E3D32</string>
+                <string>#3e3d32</string>
                 <key>selection</key>
-                <string>#49483E</string>
+                <string>#49483e</string>
                 <key>findHighlight</key>
-                <string>#FFE792</string>
+                <string>#ffe792</string>
                 <key>findHighlightForeground</key>
                 <string>#000000</string>
                 <key>selectionBorder</key>
                 <string>#222218</string>
                 <key>activeGuide</key>
-                <string>#9D550FB0</string>
+                <string>#9d550fb0</string>
 
                 <key>bracketsForeground</key>
-                <string>#F8F8F2A5</string>
+                <string>#f8f8f2a5</string>
                 <key>bracketsOptions</key>
                 <string>underline</string>
 
                 <key>bracketContentsForeground</key>
-                <string>#F8F8F2A5</string>
+                <string>#f8f8f2a5</string>
                 <key>bracketContentsOptions</key>
                 <string>underline</string>
 
@@ -205,7 +205,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#66d9ef</string>
+                <string>#999</string>
             </dict>
         </dict>
 

@@ -2,7 +2,7 @@
 ---
 name: MrCleansTodo
 file_extensions: [todo]
-scope: source # default scope assigned to all text
+scope: text # default scope assigned to all text
 
 # `ctrl + shift + p` shows the scope of the current text in an editor
 # DT = Default theme
