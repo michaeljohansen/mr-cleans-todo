@@ -35,8 +35,8 @@ variables:
   unanswered: '\?\?\?'
   reminder: '^\t*!!!( .*)?'
   # day tags
-  superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before specialKeys because precedence
-  specialKeys: '\~.*$'
+  gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before stories because precedence
+  stories: '\~.*$'
   # lines
   line: '^[-=]*$'
 
@@ -44,40 +44,40 @@ contexts:
   main: # TODO: Expand to several scopes?
     # errors (placed first to take precedence)
     - match: '{{errorSpaceNotTab}}'
-      scope: keyword
+      scope: error
     - match: '{{errorOptionSpace}}'
-      scope: keyword
+      scope: error
     - match: '{{errorCommaAfterCheckbox}}'
-      scope: keyword
+      scope: error
     # day, date, time
     - match: '{{day}}'
-      scope: support.function
+      scope: day
     - match: ' ([Kk]l|[Aa]t) {{time}}( - {{time}})?'
-      scope: support.function
+      scope: time
     # done
     - match: '{{checkedCheckbox}}'
-      scope: support.function # DT blue
+      scope: done.checkedcheckbox
     - match: '{{contextual}}'
-      scope: support.function
+      scope: done.contextual
     # todo
     - match: '{{emptyCheckbox}}'
-      scope: entity.name
+      scope: todo.emptycheckbox
     - match: '{{deletable}}'
-      scope: entity.name
+      scope: todo.deletable
     - match: '{{recurring}}'
-      scope: entity.name
+      scope: todo.recurring
     - match: '{{future}}'
-      scope: entity.name
+      scope: todo.future
     # todo:highlight
     - match: '{{unanswered}}'
-      scope: keyword
+      scope: highlight.unanswered
     - match: '{{reminder}}'
-      scope: keyword
+      scope: highlight.reminder
     # day tags
-    - match: '{{superEfficient}}'
-      scope: entity.name.function.js
-    - match: '{{specialKeys}}'
-      scope: comment.line
+    - match: '{{gamification}}'
+      scope: tag.gamification
+    - match: '{{stories}}'
+      scope: tag.stories
     # lines
     - match: '{{line}}'
-      scope: keyword
+      scope: line
