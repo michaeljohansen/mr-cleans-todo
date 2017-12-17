@@ -37,6 +37,8 @@ variables:
   # day tags
   superEfficient: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before specialKeys because precedence
   specialKeys: '\~.*$'
+  # lines
+  line: '^[-=]*$'
 
 contexts:
   main: # TODO: Expand to several scopes?
@@ -76,3 +78,6 @@ contexts:
       scope: entity.name.function.js
     - match: '{{specialKeys}}'
       scope: comment.line
+    # lines
+    - match: '{{line}}'
+      scope: keyword
