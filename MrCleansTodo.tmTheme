@@ -3,34 +3,27 @@
 <plist version="1.0">
 
 <!--
-todo.emptycheckbox
-todo.deletable
-todo.recurring
-todo.future
-highlight.unanswered
-highlight.reminder
-tag.gamification
-tag.stories
-line
+    Docs:
+    http://docs.sublimetext.info/en/latest/reference/color_schemes.html
 -->
 
 <dict>
     <key>name</key>
-    <string>Example Color Scheme</string>
+    <string>MrCleansTodo - Color Scheme</string>
     <key>settings</key>
     <array>
-        <!-- Global settings -->
+        <!-- Global settings, based on Monokai -->
         <dict>
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#222222</string>
+                <string>#272822</string>
                 
                 <key>foreground</key>
-                <string>#EEEEEE</string>
+                <string>#fff</string>
 
                 <key>caret</key>
-                <string>#FFFFFF</string>
+                <string>#f8f8f0</string>
             </dict>
         </dict>
 
@@ -58,7 +51,7 @@ line
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#f92672</string>
             </dict>
         </dict>
         <dict>
@@ -69,7 +62,7 @@ line
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>yellow</string>
+                <string>#f92672</string>
             </dict>
         </dict>
 
@@ -82,7 +75,7 @@ line
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>lightblue</string>
+                <string>yellow</string>
             </dict>
         </dict>
         <dict>
@@ -93,7 +86,107 @@ line
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>lightblue</string>
+                <string>yellow</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>todo.emptycheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>todo.deletable</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>todo.recurring</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>todo.future</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>highlight.unanswered</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>highlight.reminder</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>tag.gamification</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>tag.stories</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>???</string>
+            <key>scope</key>
+            <string>line</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>yellow</string>
             </dict>
         </dict>
 
