@@ -33,6 +33,33 @@ Got Starbucks on the way.
 Netflix all day long. Didn't even unpack.
 ```
 
+Legend:
+
+```
+[ ] A task or context
+    [ ] A subtask
+    ::: Lunch, or some other informational context
+    [ ] Another subtask
+    [ ] A meeting at 9:00
+        ::: I prefer times to be at the end of the line, like above
+        [ ] Agenda point
+        [ ] Agenda point
+    [ ] An unplanned meeting in room ??? at ???
+        ::: The question marks on the line above are highlighted because
+            I use the triple question mark for all undetermined things,
+            which are usually times, dates or room numbers.
+        [ ] Agenda point
+        [ ] Agenda point
+    - - A deletable, usually a very short task or a small reminder
+    !!! An important note or reminder
+    >>> A thing that must be moved to a future day
+    [ ] One last subtask
+[ ] Get a birthday gift for Jon Andreas
+    +++ 1 year (copy the task to the future date, then delete this triple-plus)
+    [ ] Buy the gift
+    [ ] Wrap and deliver the gift
+```
+
 ## Gamification
 
 Days that I've done a lot are tagged with "Supereffektiv" (super efficient), "Ninjaeffektiv" (ninja efficient), or "Godlike" (Unreal Tournament reference). The names are silly, but that doesn't matter. These tags, applied at the end of each day, help me aim to accomplish a lot in a day by celebrating the small checks. Checking boxes always feels good.
