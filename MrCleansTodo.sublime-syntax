@@ -31,9 +31,10 @@ variables:
   deletable: '^\t*\- \- '
   recurring: '^\t*\+\+\+ '
   future: '^\t*\>\>\> '
-  # todo:highlight
+  # highlight
   unanswered: '\?\?\?'
   reminder: '^\t*!!!( .*)?'
+  nsfw: '\b[Nn][Ss][Ff][Ww]\b'
   # day tags
   gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before stories because precedence
   stories: '\~.*$'
@@ -68,11 +69,13 @@ contexts:
       scope: todo.recurring
     - match: '{{future}}'
       scope: todo.future
-    # todo:highlight
+    # highlight
     - match: '{{unanswered}}'
       scope: highlight.unanswered
     - match: '{{reminder}}'
       scope: highlight.reminder
+    - match: '{{nsfw}}'
+      scope: highlight.nsfw
     # day tags
     - match: '{{gamification}}'
       scope: tag.gamification

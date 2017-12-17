@@ -184,6 +184,21 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
                 <string>#f92672</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>NSFW</string>
+            <key>scope</key>
+            <string>highlight.nsfw</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#000</string>
+                <key>background</key>
+                <string>#f92672</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
 
         <!-- Tags -->
         <dict>
