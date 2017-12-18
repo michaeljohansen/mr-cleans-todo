@@ -239,6 +239,21 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
             </dict>
         </dict>
 
+        <!-- Professional scope -->
+
+        <!-- Work -->
+        <dict>
+            <key>name</key>
+            <string>Work</string>
+            <key>scope</key>
+            <string>professional.work</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+
     </array>
 </dict>
 </plist>

@@ -10,8 +10,8 @@ scope: text # default scope assigned to all text
 # Colors:
 # - <COLOR_HERE> for days
 # - <COLOR_HERE> for times
-# - blue for "done-y" things
-# - green for "todo-y" things
+# - green for "done-y" things
+# - blue for "todo-y" things
 # - red for unresolved things "???"
 # - red for important reminders "!!!"
 
@@ -84,3 +84,11 @@ contexts:
     # lines
     - match: '{{line}}'
       scope: line
+
+    #
+    # My personal onthology begins here
+    #
+
+    # professional
+    - match: '(?i)difi|elv|evalass|gkprog|knowit|ntnus|peppes|qzp|sand'
+      scope: professional.work
