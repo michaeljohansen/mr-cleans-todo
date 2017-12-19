@@ -89,6 +89,18 @@ contexts:
     # My personal onthology begins here
     #
 
+    # personal
+    - match: '\b(?i)(arkiv|bilder|bolig|helse|juridisk|læring|låst|multimedia|permen|prosjekter|sosialt|tanker|trene|økonomi)\b'
+      scope: personal
+    # TODO: Is "permen" really a proper personal category?
+    # TODO: Is "prosjekter" really a proper personal category?
+    # TODO: Is "sosialt" really a proper personal category? Think so
+
     # professional
-    - match: '(?i)difi|elv|evalass|gkprog|knowit|ntnus|peppes|qzp|sand'
+    - match: '\b(?i)(difi|elv|evalass|gkprog|knowit|ntnus|peppes|qzp|sand)\b'
       scope: professional.work
+    - match: '\b(?i)(cheesy squad|cv|fag|rekruttering|salg|trio|digikult|kf|gm|tsf|twc)\b'
+      scope: professional.work.knowit
+    - match: '\b(?i)(coo|hoc|hog|hom|hot|pan)\b'
+      scope: professional.work.elv
+
