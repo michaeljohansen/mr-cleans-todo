@@ -12,6 +12,7 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
     <string>MrCleansTodo - Color Scheme</string>
     <key>settings</key>
     <array>
+        
         <!-- Global settings, based on Monokai -->
         <dict>
             <key>settings</key>
@@ -53,6 +54,36 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
         </dict>
 
         <!-- Scope styles -->
+
+        <!-- Delimiter -->
+        <dict>
+            <key>name</key>
+            <string>Context</string>
+            <key>scope</key>
+            <string>delimiter.context</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#000</string>
+                <key>background</key>
+                <string>#f92672</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Delimiter Line</string>
+            <key>scope</key>
+            <string>delimiter.line</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#f92672</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
         
         <!-- Errors -->
         <dict>
@@ -223,19 +254,6 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
             <dict>
                 <key>foreground</key>
                 <string>#999</string>
-            </dict>
-        </dict>
-
-        <!-- Line -->
-        <dict>
-            <key>name</key>
-            <string>Line</string>
-            <key>scope</key>
-            <string>line</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#f92672</string>
             </dict>
         </dict>
 

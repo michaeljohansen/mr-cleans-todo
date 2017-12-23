@@ -15,6 +15,9 @@ scope: text # default scope assigned to all text
 # - red for important reminders "!!!"
 
 variables:
+  # delimiter
+  delimiterTitle: '[0-9A-Za-zÆØÅæøå ]+'
+  delimiterLine: '[-=]{3,}'
   # errors
   errorSpaceNotTab: '^\s* \s*.*$' # spaces used instead of tabs risks malalignment
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
@@ -37,11 +40,18 @@ variables:
   # day tags
   gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before stories because precedence
   stories: '\~.*$'
-  # lines
-  line: '^[-=]*$'
 
 contexts:
-  main: # TODO: Expand to several contexts? Would be nice with a day context.
+
+  main:
+
+    # enter 'nonTodo' context with a line like: --- start of that context ---
+    - match: '^{{delimiterLine}} {{delimiterTitle}} {{delimiterLine}}$'
+      scope: delimiter.context
+      push: nonTodo
+    # delimiter lines
+    - match: '{{delimiterLine}}'
+      scope: delimiter.line
     # errors (placed first to take precedence)
     - match: '{{errorSpaceNotTab}}'
       scope: error
@@ -80,9 +90,6 @@ contexts:
       scope: tag.gamification
     - match: '{{stories}}'
       scope: tag.stories
-    # lines
-    - match: '{{line}}'
-      scope: line
 
     # my personal onthology begins here
 
@@ -100,4 +107,15 @@ contexts:
       scope: professional.work.knowit
     - match: '\b(?i)(coo|hoc|hog|hom|hot|pan)\b'
       scope: professional.work.elv
+
+  # context for ramblings, wish lists, what have you
+  nonTodo:
+
+    # exit 'nonTodo' context with a line like: --- end of that context ---
+    - match: '^{{delimiterLine}} {{delimiterTitle}} {{delimiterLine}}$'
+      scope: delimiter.context
+      pop: true
+    # delimiter lines
+    - match: '{{delimiterLine}}'
+      scope: delimiter.line
 
