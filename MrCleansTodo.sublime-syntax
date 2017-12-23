@@ -50,8 +50,9 @@ contexts:
       scope: delimiter.context
       push: nonTodo
     # delimiter lines
-    - match: '{{delimiterLine}}'
+    - match: '^{{delimiterLine}}$'
       scope: delimiter.line
+
     # errors (placed first to take precedence)
     - match: '{{errorSpaceNotTab}}'
       scope: error
@@ -116,6 +117,6 @@ contexts:
       scope: delimiter.context
       pop: true
     # delimiter lines
-    - match: '{{delimiterLine}}'
+    - match: '^{{delimiterLine}}$'
       scope: delimiter.line
 
