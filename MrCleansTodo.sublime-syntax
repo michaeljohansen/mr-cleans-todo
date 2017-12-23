@@ -5,9 +5,8 @@ file_extensions: [todo]
 scope: text # default scope assigned to all text
 
 # `ctrl + shift + p` shows the scope of the current text in an editor
-# DT = Default theme
 
-# Colors:
+# colors:
 # - <COLOR_HERE> for days
 # - <COLOR_HERE> for times
 # - green for "done-y" things
@@ -85,16 +84,14 @@ contexts:
     - match: '{{line}}'
       scope: line
 
-    #
-    # My personal onthology begins here
-    #
+    # my personal onthology begins here
 
     # personal
     - match: '\b(?i)(arkiv|bilder|bolig|helse|juridisk|læring|låst|multimedia|permen|prosjekter|sosialt|tanker|trene|økonomi)\b'
       scope: personal
-    # TODO: Is "permen" really a proper personal category?
-    # TODO: Is "prosjekter" really a proper personal category?
-    # TODO: Is "sosialt" really a proper personal category? Think so
+    # TODO: is "permen" really a proper personal category?
+    # TODO: is "prosjekter" really a proper personal category?
+    # TODO: is "sosialt" really a proper personal category? Think so
 
     # professional
     - match: '\b(?i)(difi|elv|evalass|gkprog|knowit|ntnus|peppes|qzp|sand)\b'
