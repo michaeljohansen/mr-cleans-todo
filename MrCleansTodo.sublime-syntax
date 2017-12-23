@@ -120,6 +120,9 @@ contexts:
     - match: '^{{delimiterLine}}$'
       scope: delimiter.line
 
+    # non todo title
+    - match: '^# .*$'
+      scope: nontodo.title
     # non todo list
     - match: '^\t*(\-|\+|\*|\d+\.?) '
       scope: nontodo.list
