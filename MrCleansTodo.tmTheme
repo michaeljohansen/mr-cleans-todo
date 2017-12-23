@@ -12,7 +12,7 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
     <string>MrCleansTodo - Color Scheme</string>
     <key>settings</key>
     <array>
-        
+
         <!-- Global settings, based on Monokai -->
         <dict>
             <key>settings</key>
@@ -316,6 +316,21 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
             <dict>
                 <key>foreground</key>
                 <string>white</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+
+        <!-- Non Todo -->
+        <dict>
+            <key>name</key>
+            <string>Non-Todo List</string>
+            <key>scope</key>
+            <string>nontodo.list</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#f92672</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
