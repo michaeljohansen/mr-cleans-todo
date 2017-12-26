@@ -1,5 +1,5 @@
 {
-	"scope": "source",
+	"scope": "text",
 
 	"completions":
 	[
@@ -19,10 +19,10 @@
 
 		// Triggers below are specific to me, the author. Make something you want instead.
 
-		{ "trigger": "k\tkk", "contents": "[ ] Knowit, kl ???," },
+		{ "trigger": "k\tkk", "contents": "[ ] Knowit, kl ???" },
 
-		{ "trigger": "org\tchart", "contents": "[ ] Elv, HOC, OrgChart,\n\t[ ] ?: ?" },
-		{ "trigger": "prov\tisioning", "contents": "[ ] Elv, HOC, Provisioning,\n\t[ ] ?: ?" },
+		{ "trigger": "org\tchart", "contents": "[ ] Elv, HOC, OrgChart\n\t[ ] ?: ?" },
+		{ "trigger": "prov\tisioning", "contents": "[ ] Elv, HOC, Provisioning\n\t[ ] ?: ?" },
 
 		{ "trigger": "stj", "contents": "[x] Trene, sykle til jobb\n" },
 		{ "trigger": "sh", "contents": "[x] Trene, sykle hjem\n" }
