@@ -44,6 +44,7 @@ variables:
   emptyMultiCheckbox: '^\t*\[ +\] '
   partialMultiCheckbox: '^\t*\[x+ +\] '
   checkedMultiCheckbox: '^\t*\[x+\] '
+  voidedMultiCheckbox: '^\t*\[v+\] '
 
 contexts:
 
@@ -137,3 +138,5 @@ contexts:
       scope: nontodo.partialMultiCheckbox
     - match: '{{checkedMultiCheckbox}}'
       scope: nontodo.checkedMultiCheckbox
+    - match: '{{voidedMultiCheckbox}}'
+      scope: nontodo.voidedMultiCheckbox

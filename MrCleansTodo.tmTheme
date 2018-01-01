@@ -387,6 +387,19 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
                 <string>bold</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Non-Todo Voided Multi Checkbox</string>
+            <key>scope</key>
+            <string>nontodo.voidedMultiCheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#999</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
 
     </array>
 </dict>
