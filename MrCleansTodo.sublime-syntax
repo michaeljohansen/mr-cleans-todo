@@ -40,6 +40,10 @@ variables:
   # day tags
   gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before stories because precedence
   stories: '\~.*$'
+  # nontodo
+  emptyMultiCheckbox: '^\t*\[ +\] '
+  partialMultiCheckbox: '^\t*\[x+ +\] '
+  checkedMultiCheckbox: '^\t*\[x+\] '
 
 contexts:
 
@@ -120,9 +124,16 @@ contexts:
     - match: '^{{delimiterLine}}$'
       scope: delimiter.line
 
-    # non todo title
+    # title
     - match: '^# .*$'
       scope: nontodo.title
-    # non todo list
+    # list
     - match: '^\t*(\-|\+|\*|\d+\.?) '
       scope: nontodo.list
+    # multi checkbox
+    - match: '{{emptyMultiCheckbox}}'
+      scope: nontodo.emptyMultiCheckbox
+    - match: '{{partialMultiCheckbox}}'
+      scope: nontodo.partialMultiCheckbox
+    - match: '{{checkedMultiCheckbox}}'
+      scope: nontodo.checkedMultiCheckbox

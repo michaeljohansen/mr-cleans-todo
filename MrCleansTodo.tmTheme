@@ -348,6 +348,45 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
                 <string>bold</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Non-Todo Empty Multi Checkbox</string>
+            <key>scope</key>
+            <string>nontodo.emptyMultiCheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#66d9ef</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Non-Todo Partial Multi Checkbox</string>
+            <key>scope</key>
+            <string>nontodo.partialMultiCheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#66d9ef</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Non-Todo Checked Multi Checkbox</string>
+            <key>scope</key>
+            <string>nontodo.checkedMultiCheckbox</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a6e22e</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
 
     </array>
 </dict>
