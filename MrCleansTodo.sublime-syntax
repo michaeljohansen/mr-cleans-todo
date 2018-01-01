@@ -34,7 +34,7 @@ variables:
   recurring: '^\t*\+\+\+ '
   future: '^\t*\>\>\> '
   # highlight
-  unanswered: '\?\?\?'
+  unanswered: '\?{3,}'
   reminder: '^\t*!!!( .*)?'
   nsfw: '\b[Nn][Ss][Ff][Ww]\b'
   # day tags
