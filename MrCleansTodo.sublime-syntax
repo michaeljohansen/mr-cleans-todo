@@ -4,6 +4,8 @@ name: MrCleansTodo
 file_extensions: [todo]
 scope: text # default scope assigned to all text
 
+# Sublime docs: https://www.sublimetext.com/docs/3/syntax.html
+
 # `ctrl + shift + p` shows the scope of the current text in an editor
 
 # colors:
@@ -49,6 +51,10 @@ variables:
 contexts:
 
   main:
+
+    # enter 'comment' context
+    - match: '(^|\s)"'
+      push: comment
 
     # enter 'nonTodo' context with a line like: --- start of that context ---
     - match: '^{{delimiterLine}} {{delimiterTitle}} {{delimiterLine}}$'
@@ -113,6 +119,15 @@ contexts:
       scope: professional.work.knowit
     - match: '\b(?i)(coo|hoc|hog|hom|hot|pan)\b'
       scope: professional.work.elv
+
+  # context for comments
+  # (also covers comment scope for all other languages, which is handy)
+  comment:
+    - meta_scope: comment
+    #- match: \\" # escaped quote mark
+    #  scope: comment
+    - match: '"'
+      pop: true
 
   # context for ramblings, wish lists, what have you
   nonTodo:
