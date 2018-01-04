@@ -3,8 +3,9 @@
 <plist version="1.0">
 
 <!--
-Docs: http://docs.sublimetext.info/en/latest/reference/color_schemes.html
-Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/Monokai.tmTheme
+Sublime docs: http://docs.sublimetext.info/en/latest/reference/color_schemes.html
+Monokai theme: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/Monokai.tmTheme
+Monokai colors: http://www.colourlovers.com/palette/1718713/Monokai
 -->
 
 <dict>
@@ -318,6 +319,21 @@ Monokai: https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/
                 <string>white</string>
                 <key>fontStyle</key>
                 <string>bold</string>
+            </dict>
+        </dict>
+
+        <!-- Comment -->
+        <dict>
+            <key>name</key>
+            <string>Non-Todo Title</string>
+            <key>scope</key>
+            <string>comment</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a6e22e</string>
+                <key>fontStyle</key>
+                <string>italic</string>
             </dict>
         </dict>
 
