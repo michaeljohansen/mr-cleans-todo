@@ -40,7 +40,7 @@ variables:
   reminder: '^\t*!!!( .*)?'
   nsfw: '\b[Nn][Ss][Ff][Ww]\b'
   # day tags
-  gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike)' # before stories because precedence
+  gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike|Lucy)' # before stories because precedence
   stories: '\~.*$'
   # nontodo
   emptyMultiCheckbox: '^\t*\[ +\] '
