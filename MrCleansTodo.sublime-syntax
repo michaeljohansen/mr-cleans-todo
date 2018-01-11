@@ -18,7 +18,7 @@ scope: text # default scope assigned to all text
 
 variables:
   # delimiter
-  delimiterTitle: '[0-9A-Za-zÆØÅæøå ]+'
+  delimiterTitle: '[0-9A-Za-zÆØÅæøå \.\,\-_]+'
   delimiterLine: '[-=]{3,}'
   # errors
   errorSpaceNotTab: '^\s* \s*.*$' # spaces used instead of tabs risks malalignment
