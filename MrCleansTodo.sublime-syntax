@@ -26,6 +26,7 @@ variables:
   # errors
   errorSpaceNotTab: '^\s* \s*.*$' # tabs over spaces reduces risk of misalignment
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
+  errorMissingSpace: '^\t*(\[x\]|:::|\[ \]|- -|\+\+\+|\>\>\>)\S' # missing space after checkbox "[x]nospace"
   errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
   # day, date, time
   day: '^((man|tirs|ons|tors|fre|lør|søn)dag|(mon|tues|wednes|thurs|fri|satur|sun)day) \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
@@ -45,7 +46,7 @@ variables:
   # day tags
   gamification: '\~ (Supereffektiv|Ninjaeffektiv|Godlike|Lucy)' # before stories because precedence
   stories: '\~.*$'
-  # nontodo
+  # nontodo context
   emptyMultiCheckbox: '^\t*\[ +\] '
   partialMultiCheckbox: '^\t*\[x+ +\] '
   checkedMultiCheckbox: '^\t*\[x+\] '
@@ -71,6 +72,8 @@ contexts:
     - match: '{{errorSpaceNotTab}}'
       scope: error
     - match: '{{errorOptionSpace}}'
+      scope: error
+    - match: '{{errorMissingSpace}}'
       scope: error
     - match: '{{errorCommaAfterCheckbox}}'
       scope: error
