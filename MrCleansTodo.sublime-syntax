@@ -18,26 +18,26 @@ scope: text # default scope assigned to all text
 
 variables:
   # support variables
-  numberAfterCheckbox: '([\dX]+([/:\-\.][\dX]+)*( |$))?' # [x] 127 [x] 1/3 [x] 13:45 [x] 2018-01-19 [x] 1.0.2
+  numberAfterCheckbox: '( [\dX]+([/:\-\.][\dX]+)*)?' # [x] 127 [x] 1/3 [x] 13:45 [x] 2018-01-19 [x] 1.0.2
 
   # delimiter
   delimiterTitle: '[0-9A-Za-zÆØÅæøå \.\,\-_]+'
   delimiterLine: '[-=]{3,}'
   # errors
-  errorSpaceNotTab: '^\s* \s*.*$' # spaces used instead of tabs risks malalignment
+  errorSpaceNotTab: '^\s* \s*.*$' # tabs over spaces reduces risk of misalignment
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
   errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
   # day, date, time
   day: '^((man|tirs|ons|tors|fre|lør|søn)dag|(mon|tues|wednes|thurs|fri|satur|sun)day) \d\d\.\d\d\.\d\d' # use inside regex: {{day}}
   time: '(00|01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21|22|23|[0-9])(\:[0-5][0-9])?'
   # done
-  checkedCheckbox: '^\t*\[x\] {{numberAfterCheckbox}}'
-  contextual: '^\t*::: {{numberAfterCheckbox}}'
+  checkedCheckbox: '^\t*\[x\]{{numberAfterCheckbox}}'
+  contextual: '^\t*:::{{numberAfterCheckbox}}'
   # todo
-  emptyCheckbox: '^\t*\[ \] {{numberAfterCheckbox}}'
-  deletable: '^\t*\- \- {{numberAfterCheckbox}}'
-  recurring: '^\t*\+\+\+ {{numberAfterCheckbox}}'
-  future: '^\t*\>\>\> {{numberAfterCheckbox}}'
+  emptyCheckbox: '^\t*\[ \]{{numberAfterCheckbox}}'
+  deletable: '^\t*\- \-{{numberAfterCheckbox}}'
+  recurring: '^\t*\+\+\+{{numberAfterCheckbox}}'
+  future: '^\t*\>\>\>{{numberAfterCheckbox}}'
   # highlight
   unanswered: '\?{3,}'
   reminder: '^\t*!!!( .*)?'
