@@ -25,6 +25,11 @@ variables:
   delimiterLine: '[-=]{3,}'
   # errors
   errorMaxLen: '^.{81,}$' # more then 80 chars
+  errorMaxLenTab: '^\t.{77,}$' # yes, these are a hack, can't think of any other way to do it without proper math
+  errorMaxLenTabTab: '^\t{2}.{73,}$'
+  errorMaxLenTabTabTab: '^\t{3}.{69,}$'
+  errorMaxLenTabTabTabTab: '^\t{4}.{65,}$'
+  errorMaxLenTabTabTabTabTab: '^\t{5}.{61,}$'
   errorSpaceNotTab: '^\s* \s*.*$' # tabs over spaces reduces risk of misalignment
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
   errorMissingSpace: '^\t*(\[x\]|:::|\[ \]|- -|\+\+\+|\>\>\>)\S' # missing space after checkbox "[x]nospace"
@@ -70,7 +75,7 @@ contexts:
       scope: delimiter.line
 
     # errors (placed first to take precedence)
-    - match: '{{errorMaxLen}}'
+    - match: '{{errorMaxLen}}|{{errorMaxLenTab}}|{{errorMaxLenTabTab}}|{{errorMaxLenTabTabTab}}|{{errorMaxLenTabTabTabTab}}|{{errorMaxLenTabTabTabTabTab}}'
       scope: error
     - match: '{{errorSpaceNotTab}}'
       scope: error
