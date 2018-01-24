@@ -31,6 +31,7 @@ variables:
   errorMaxLenTabTabTabTab: '^\t{4}.{65,}$'
   errorMaxLenTabTabTabTabTab: '^\t{5}.{61,}$'
   errorSpaceNotTab: '^\s* \s*.*$' # tabs over spaces reduces risk of misalignment
+  errorMultiSpace: '^.* {2,}.*$' # multiple consecutive spaces used anywhere in a line
   errorOptionSpace: '^.*? .*?$' # `option + space` used anywhere in a line
   errorMissingSpace: '^\t*(\[x\]|:::|\[ \]|- -|\+\+\+|\>\>\>)\S' # missing space after checkbox "[x]nospace"
   errorCommaAfterCheckbox: '^\t*\[[x ]\] .*,$' # checkbox line with a comma at the end
@@ -78,6 +79,8 @@ contexts:
     - match: '{{errorMaxLen}}|{{errorMaxLenTab}}|{{errorMaxLenTabTab}}|{{errorMaxLenTabTabTab}}|{{errorMaxLenTabTabTabTab}}|{{errorMaxLenTabTabTabTabTab}}'
       scope: error
     - match: '{{errorSpaceNotTab}}'
+      scope: error
+    - match: '{{errorMultiSpace}}'
       scope: error
     - match: '{{errorOptionSpace}}'
       scope: error
