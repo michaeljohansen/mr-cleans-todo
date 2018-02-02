@@ -20,5 +20,10 @@
 	// Whitespace
 	"tab_size": 4,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+	"word_wrap": false,
+
+	// Auto-complete
+	"auto_complete": true,
+	"auto_complete_delay": 0,
+	"auto_complete_selector": "comment, day, delimiter, done, highlight, nontodo, personal, professional, tag, text, time, todo",
 }
