@@ -1,6 +1,12 @@
 // Settings in here override those in "Default/Preferences.sublime-settings", and
 // are overridden in turn by file type specific settings.
 {
+	// Define color scheme
+	// Note: Defining the color scheme here creates a tight coupling between
+	// syntax and color scheme, which ensures that the user doesn't have to
+	// use our color scheme for all files, - that would be counter-productive.
+	"color_scheme": "Packages/MrCleansTodo/MrCleansTodo.tmTheme",
+
 	// Font
 	"font_face": "Operator Mono", // Use a monospaced font you like
 	"font_size": 14,
