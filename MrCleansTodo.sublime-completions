@@ -13,11 +13,12 @@
 		{ "trigger": "lør\tdag", "contents": "lørdag ${1:year}.${2:month}.${3:day}" },
 		{ "trigger": "søn\tdag", "contents": "søndag ${1:year}.${2:month}.${3:day}" },
 
-		{ "trigger": "s\tup", "contents": "Supereffektiv" },
-		{ "trigger": "n\tin", "contents": "Ninjaeffektiv" },
-		{ "trigger": "g\tod", "contents": "Godlike" },
+		{ "trigger": "s\tup", "contents": "~ Supereffektiv" },
+		{ "trigger": "n\tin", "contents": "~ Ninjaeffektiv" },
+		{ "trigger": "g\tod", "contents": "~ Godlike" },
+		{ "trigger": "l\tuc", "contents": "~ Lucy" },
 
-		// Triggers below are specific to me, the author. Make something you want instead.
+		// Triggers below are _very_ specific to me, the author. Make something you want instead.
 
 		{ "trigger": "k\tkk", "contents": "[ ] Knowit, kl ???" },
 
