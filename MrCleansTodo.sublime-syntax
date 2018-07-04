@@ -18,7 +18,7 @@ scope: text # default scope assigned to all text
 
 variables:
   # support variables
-  numberAfterCheckbox: '( [\dX]+([/:\-\.][\dX]+)*)?' # [x] 127 [x] 1/3 [x] 13:45 [x] 2018-01-19 [x] 1.0.2
+  numberAfterCheckbox: '( [\dX]+([/:,\-\.][\dX]+)*)?' # [x] 127 [x] 1/3 [x] 13:45 [x] 2018-01-19 [x] 1.0.2 [x] 27,310,55
 
   # delimiter
   delimiterTitle: '[0-9A-Za-zÆØÅæøå \.\,\-_]+'
