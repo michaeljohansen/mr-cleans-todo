@@ -2,6 +2,13 @@
 	{
 		"args":
 		{
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
 			"to": "bol"
 		},
 		"command": "move_to"
@@ -10,6 +17,7 @@
 		"args":
 		{
 			"by": "characters",
+			"extend": true,
 			"forward": true
 		},
 		"command": "move"
@@ -26,7 +34,36 @@
 	{
 		"args":
 		{
-			"characters": "x"
+			"by": "characters",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args":
+		{
+			"characters": "[x]"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": " "
 		},
 		"command": "insert"
 	},
