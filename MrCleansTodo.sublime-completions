@@ -19,14 +19,21 @@
 		{ "trigger": "l\tuc", "contents": "~ Lucy" },
 
 		// Triggers below are _very_ specific to me, the author. Make something you want instead.
+		
+		// Personlig
+
+		{ "trigger": "bo", "contents": "[ ] Bolig, oppvask" },
+
+		{ "trigger": "stj", "contents": "[ ] Trene, sykle til jobb" },
+		{ "trigger": "sh", "contents": "[ ] Trene, sykle hjem" },
+
+		// Profesjonelt
 
 		{ "trigger": "k\tkk", "contents": "[ ] Knowit, kl ???" },
+		{ "trigger": "t\trio", "contents": "[ ] Knowit, TRiO, kl ???" },
 
 		{ "trigger": "org\tchart", "contents": "[ ] Elv, HOC, OrgChart\n\t[ ] ?: ?" },
-		{ "trigger": "prov\tisioning", "contents": "[ ] Elv, HOC, Provisioning\n\t[ ] ?: ?" },
-
-		{ "trigger": "stj", "contents": "[x] Trene, sykle til jobb\n" },
-		{ "trigger": "sh", "contents": "[x] Trene, sykle hjem\n" }
+		{ "trigger": "prov\tisioning", "contents": "[ ] Elv, HOC, Provisioning\n\t[ ] ?: ?" }
 
 	]
 }
