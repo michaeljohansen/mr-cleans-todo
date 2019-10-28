@@ -123,18 +123,19 @@ contexts:
     # my personal onthology begins here
 
     # personal
-    - match: '\b(?i)(arkiv|bilder|bolig|helse|juridisk|læring|låst|multimedia|permen|prosjekter|sosialt|tanker|trene|økonomi)\b'
+    - match: '\b(Arkiv|Bil|Bilder|Bolig|Familie|Helse|Juridisk|Læring|Låst|Multimedia|Permen|Prosjekter|Reise|Service|Shopping|Skredder|Sosialt|Tanker|Todolisten|Trene|Økonomi)\b'
       scope: personal
     # TODO: is "permen" really a proper personal category?
     # TODO: is "prosjekter" really a proper personal category?
-    # TODO: is "sosialt" really a proper personal category? Think so
+    - match: '\b(Kinogjengen|Oslogjengen|Zombieslakting)\b'
+      scope: personal.sosialt
 
     # professional
-    - match: '\b(?i)(difi|elv|evalass|gkprog|knowit|ntnus|peppes|qzp|sand)\b'
+    - match: '\b(Difi|Elv|EvalAss|GKProg|Knowit|NTNUS|Peppes|QZP|Sand)\b'
       scope: professional.work
-    - match: '\b(?i)(cheesy squad|cv|fag|rekruttering|salg|trio|digikult|kf|gm|tsf|twc)\b'
+    - match: '\b(Admin|GL|Fag|FGK|Rekruttering|Salg|CV|TRiO|DigiKULT|KF|TSF|TWC)\b'
       scope: professional.work.knowit
-    - match: '\b(?i)(coo|hoc|hog|hom|hot|pan)\b'
+    - match: '\b(COO|HOC|HOG|HOM|HOT|PAN)\b'
       scope: professional.work.elv
 
   # context for comments
