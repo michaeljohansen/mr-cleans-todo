@@ -4,5 +4,6 @@
 	{ "keys": ["ctrl+1"], "command": "run_macro_file", "args": {"file": "Packages/MrCleansTodo/macros/CreateFirstLevelBox.sublime-macro"} },
 	{ "keys": ["ctrl+2"], "command": "run_macro_file", "args": {"file": "Packages/MrCleansTodo/macros/CreateSecondLevelBox.sublime-macro"} },
 	{ "keys": ["ctrl+3"], "command": "run_macro_file", "args": {"file": "Packages/MrCleansTodo/macros/CreateThirdLevelBox.sublime-macro"} },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/MrCleansTodo/macros/DupeAndDone.sublime-macro"} },
 	{ "keys": ["ctrl+u"], "command": "permute_lines", "args": {"operation": "unique"} }
 ]
