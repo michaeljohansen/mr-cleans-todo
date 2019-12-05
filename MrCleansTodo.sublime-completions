@@ -19,10 +19,12 @@
 		{ "trigger": "l\tuc", "contents": "~ Lucy" },
 
 		// Triggers below are _very_ specific to me, the author. Make something you want instead.
-		
+
 		// Personlig
 
 		{ "trigger": "bo", "contents": "[ ] Bolig, oppvask" },
+
+		{ "trigger": "vø", "contents": "[ ] Helse, varm øyemaske" },
 
 		{ "trigger": "stj", "contents": "[ ] Trene, sykle til jobb" },
 		{ "trigger": "sh", "contents": "[ ] Trene, sykle hjem" },
