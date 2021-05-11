@@ -5,13 +5,13 @@
 	[
 		"todo",
 
-		{ "trigger": "man\tdag", "contents": "mandag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "tirs\tdag", "contents": "tirsdag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "ons\tdag", "contents": "onsdag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "tors\tdag", "contents": "torsdag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "fre\tdag", "contents": "fredag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "lør\tdag", "contents": "lørdag ${1:year}.${2:month}.${3:day}" },
-		{ "trigger": "søn\tdag", "contents": "søndag ${1:year}.${2:month}.${3:day}" },
+		{ "trigger": "man\tdag", "contents": "mandag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "tirs\tdag", "contents": "tirsdag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "ons\tdag", "contents": "onsdag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "tors\tdag", "contents": "torsdag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "fre\tdag", "contents": "fredag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "lør\tdag", "contents": "lørdag ${1:year}-${2:month}-${3:day}" },
+		{ "trigger": "søn\tdag", "contents": "søndag ${1:year}-${2:month}-${3:day}" },
 
 		{ "trigger": "s\tup", "contents": "~ Supereffektiv" },
 		{ "trigger": "n\tin", "contents": "~ Ninjaeffektiv" },
